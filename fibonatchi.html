@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./btn.css">
+    <link rel="stylesheet" href="./fonts/vazir.css">
+    <link rel="stylesheet" href="./fibonatchi.css">
+    <link rel="icon" href="./8bd8be51-166b-4246-a05a-41d8e523049e_200x200.png">
+    <title>Fibonatchi</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <ul>
+            <li class="inline main_li">
+                <a href="./main.html" class="main mainlink">Main</a>
+            </li>
+            <li class="inline search_li search">
+                <a href="#">Search</a>
+                <ul class="scroll_down_nav search_menu">
+                    <li>
+                        <a href="./binarysearch.html">Binary search</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="inline sort_li sort ">
+                <a href="#">Sort</a>
+                <ul class="scroll_down_nav sort_menu">
+                    <li>
+                        <a href="./binary_sort.html"> Buble Sort</a>
+                    </li>
+                    <li>
+                        <a href="./quick_sort.html"> Quick Sort </a>
+                    </li>
+                    <li>
+                        <a href="./merge_sort.html"> Merge Sort</a>
+                    </li>
+                    <li>
+                        <a href="./insectionsort.html">Insection Sort</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="inline calculate">
+                <a href="#">calculate</a>
+                <ul class="scroll_down_nav ">
+                    <li>
+                        <a href="./fibonatchi.html">Fibonatchi String</a>
+                    </li>
+                    <li>
+                        <a href="./newton-dual.html">Newton Dual</a>
+                    </li>
+                    <li>
+                        <a href="./floyd-algorithm.html">Floyd Algorithm</a>
+                    </li>
+                    <li>
+                        <a href="./msp.html">Minimum Spanning Tree</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="number clearfix">
+            <form action="#">
+                <label for="fib_number" class="fib_number_label">Inter a Number:</label>
+                <input type="range" id="fib_number">
+                <button type="button" id="btn">Calculate</button>
+            </form>
+        </div>
+        <div class="part2">
+            <div class="fib_module_1">
+                <p class="fib">
+                    Fib(1)
+                </p>
+                <p class="data_information">
+                    The First Fibonatchi Function will calculate your number in:
+                </p>
+                <p id="fib1time" class="rem2"></p>
+                <p class="rem2">Seconds</p><br>
+                <p>
+                    The Answer is
+                    <span class="ans_fib2"></span>
+                </p>
+            </div>
+            <div class="fib_module_2">
+                <p class="fib">
+                    Fib(2)
+                </p>
+                <p class="data_information">
+                    The Second Fibonatchi Function will calculate your number in:
+                </p>
+                <p id="fib2time" class="rem2"></p>
+                <p class="rem2">Seconds</p><br>
+                <p>
+                    The Answer is
+                    <span class="ans_fib1"></span>
+                </p>
+            </div>
+            <form action="" class="qform">
+                <button type="button" class="btn" id="btnanw2">New one</button>
+                <a href="./main.html"><button type="button" class="btn" id="btnanw3">Main </button></a>
+            </form>
+        </div>
+    </main>
+    <script src="./fibonatchi.js"></script>
+</body>
+
+</html>

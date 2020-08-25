@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./fonts/vazir.css">
+    <link rel="stylesheet" href="./binary_sort.css">
+    <link rel="stylesheet" href="./btn.css">
+    <link rel="icon" href="./8bd8be51-166b-4246-a05a-41d8e523049e_200x200.png">
+    <title>Buble Sort</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <ul>
+            <li class="inline main_li">
+                <a href="./main.html" class="main mainlink">Main</a>
+            </li>
+            <li class="inline search_li search">
+                <a href="#">Search</a>
+                <ul class="scroll_down_nav search_menu">
+                    <li>
+                        <a href="./binarysearch.html">Binary search</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="inline sort_li sort ">
+                <a href="#">Sort</a>
+                <ul class="scroll_down_nav sort_menu">
+                    <li>
+                        <a href="./binary_sort.html"> Buble Sort</a>
+                    </li>
+                    <li>
+                        <a href="./quick_sort.html"> Quick Sort </a>
+                    </li>
+                    <li>
+                        <a href="./merge_sort.html"> Merge Sort</a>
+                    </li>
+                    <li>
+                        <a href="./insectionsort.html">Insection Sort</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="inline calculate">
+                <a href="#">calculate</a>
+                <ul class="scroll_down_nav ">
+                    <li>
+                        <a href="./fibonatchi.html">Fibonatchi String</a>
+                    </li>
+                    <li>
+                        <a href="./newton-dual.html">Newton Dual</a>
+                    </li>
+                    <li>
+                        <a href="./floyd-algorithm.html">Floyd Algorithm</a>
+                    </li>
+                    <li>
+                        <a href="./msp.html">Minimum Spanning Tree</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div>
+            <form action="#">
+                <div class="form2">
+                    <label for="searchenginearraysize" class="input_size_label">
+                        Please select the size of your array.
+                    </label>
+                    <input type="range" name="searchenginearraysize" id="searchenginearraysize">
+                </div>
+                <button type="button" id="btn">Sort it</button>
+            </form>
+        </div>
+    </main>
+    <div class="result1">
+        <p id="result_not_found">
+            Sorted in:
+            <p class="result_time"></p>
+            Seconds
+        </p>
+        <form action="" class="qform">
+            <button type="button" class="btn" id="btnanw1">Do it again</button>
+            <a href="./main.html"><button type="button" class="btn" id="btnanw3">Main </button></a>
+        </form>
+    </div>
+    <script src="./binary_sort.js">
+    </script>
+</body>
+
+</html>

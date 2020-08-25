@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./fonts/vazir.css">
+    <link rel="stylesheet" href="./floyd-algorithm.css">
+    <link rel="icon" href="./8bd8be51-166b-4246-a05a-41d8e523049e_200x200.png">
+    <title>Floyd Algorithm</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <ul>
+            <li class="inline main_li">
+                <a href="./main.html" class="main mainlink">Main</a>
+            </li>
+            <li class="inline search_li search">
+                <a href="#">Search</a>
+                <ul class="scroll_down_nav search_menu">
+                    <li>
+                        <a href="./binarysearch.html">Binary search</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="inline sort_li sort ">
+                <a href="#">Sort</a>
+                <ul class="scroll_down_nav sort_menu">
+                    <li>
+                        <a href="./binary_sort.html"> Buble Sort</a>
+                    </li>
+                    <li>
+                        <a href="./quick_sort.html"> Quick Sort </a>
+                    </li>
+                    <li>
+                        <a href="./merge_sort.html"> Merge Sort</a>
+                    </li>
+                    <li>
+                        <a href="./insectionsort.html">Insection Sort</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="inline calculate">
+                <a href="#">calculate</a>
+                <ul class="scroll_down_nav ">
+                    <li>
+                        <a href="./fibonatchi.html">Fibonatchi String</a>
+                    </li>
+                    <li>
+                        <a href="./newton-dual.html">Newton Dual</a>
+                    </li>
+                    <li>
+                        <a href="./floyd-algorithm.html">Floyd Algorithm</a>
+                    </li>
+                    <li>
+                        <a href="./msp.html">Minimum Spanning Tree</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <!-- The first question -->
+        <div class="randomiseselect" id="firstq">
+            <p for="">Do You Want To Select the array inputs by PC?</p>
+            <form action="" class="qform">
+                <div>
+                    <label for="yesoption">YES</label>
+                    <input type="radio" name="randomiseselect" id="yesoption">
+                    <label for="nooption">NO</label>
+                    <input type="radio" name="randomiseselect" id="nooption">
+                    <button type="button" class="btn" id="btnq1">NEXT</button>
+                </div>
+            </form>
+
+        </div>
+        <!-- if the first question was yes this will be shown -->
+        <div class="randomiseselect block" id="secondq">
+            <p>Do You Want It To Be Jahhatdar?</p>
+            <form action="" class="qform">
+                <div>
+                    <label for="yesoption2">YES</label>
+                    <input type="radio" name="randomiseselect" id="yesoption2">
+                    <label for="nooption2">NO</label>
+                    <input type="radio" name="randomiseselect" id="nooption2">
+                </div>
+                <button type="button" class="btn" id="btnq2">NEXT</button>
+            </form>
+        </div>
+        <!-- if the first question was no this will be shown -->
+        <div class="randomiseselect block" id="thirdq">
+            <p for="">Please insert the Size of The Matrix.</p>
+            <form action="" class="qform">
+                <div>
+                    <input type="number" name="grafsize_byhuman" id="grafsize_byhuman">
+                    <button type="button" class="btn" id="btnq3">NEXT</button>
+                </div>
+            </form>
+        </div>
+        <!-- from here we ask questions about human selection Matrix -->
+        <div class="randomiseselect block" id="fourthq">
+            <p>Is There any route from A<span id="grafnode_a"></span> to A<span id="grafnode_b"></span>?</p>
+            <form action="" class="qform">
+                <div>
+                    <label for="yesoption3">YES</label>
+                    <input type="radio" name="randomiseselect" id="yesoption3">
+                    <label for="nooption3">NO</label>
+                    <input type="radio" name="randomiseselect" id="nooption3">
+                </div>
+                <button type="button" class="btn" id="btnq4">NEXT</button>
+            </form>
+        </div>
+        <div class="randomiseselect block" id="fithq">
+            <p> how long is that route?</p>
+            <form action="" class="qform">
+                <div>
+                    <input type="number" name="distance" class="stylewidth" id="distance">
+                    <button type="button" class="btn" id="btnq5">NEXT</button>
+                </div>
+            </form>
+        </div>
+        <div class="randomiseselect block" id="sixthq">
+            <p>Ok Done</p>
+            <p>
+                Total Time <span id="answer_time"></span>.
+            </p>
+            <br>
+            <p>Do You Want To Resume with this array or another one?</p><br>
+            <p>Or Even Go To the Main Page</p>
+            <form action="" class="qform">
+                <button type="button" class="btn" id="btnanw1">continue</button>
+                <button type="button" class="btn" id="btnanw2">New one</button>
+                <a href="./main.html"><button type="button" class="btn" id="btnanw3">Main </button></a>
+            </form>
+        </div>
+        <div>
+            <div class="randomiseselect block" id="continue_data">
+                <p>
+                    Which Route Do You Want to Found?
+                </p>
+                <div>
+                    <form action="#" class="qform">
+                        <div>
+                            <label for="Q1select">From:</label>
+                            <input type="number" name="" id="Q1select">
+                            <label for="Q2select">To:</label>
+                            <input type="number" name="" id="Q2select">
+                        </div>
+                        <button type="button" class="btn" id="btnq6">NEXT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="randomiseselect block answer" id="answerdiv">
+            <p id="answermat" class="block">
+                The Best Route between A<span class="subtract" id="answer_1"></span> and A<span class="subtract" id="answer_2"></span> is <span id="final_answer"></span>.
+            </p>
+            <p id="ansb">
+
+            </p id="ansb">
+            <p id="same_check" class="block">
+                They are the Same
+            </p>
+            <form action="" class="qform" id="qform12">
+                <button type="button" class="btn " id="btnanw4">New one</button>
+                <a href="./main.html"><button type="button" class="btn" id="btnanw3">Main </button></a>
+            </form>
+        </div>
+    </main>
+    <script src="./floyd-algorithm.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+#d1 {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 15vh;
+    top: 20vh;
+}
+
+#multyL {
+    color: azure;
+    background-image: linear-gradient(120deg, transparent 50%, white 50%);
+    background-size: 250%;
+    transition: all 0.4s;
+    border-radius: 2px;
+}
+
+#d1:hover #multyL {
+    background-position: 100%;
+    color: royalblue;
+    transform: translateX(16px);
+}
+
+.inputnum {
+    padding: .5rem;
+    width: 15rem;
+    background-color: #0984e3;
+    color: black;
+    /* color: aqua; */
+    border-radius: 4px;
+    box-shadow: none;
+    border: none;
+}
+
+.inputnum::placeholder {
+    color: rgb(54, 50, 50);
+}
+
+.inputnum:focus {
+    border: none;
+    outline: 0;
+    background-color: #0d68ad;
+}
+
+#d2 {
+    position: absolute;
+    top: 5vh;
+}
+
+#btnanw1 {
+    position: absolute;
+}

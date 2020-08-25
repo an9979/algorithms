@@ -1,0 +1,132 @@
+.randomiseselect {
+    position: absolute;
+    left: 29rem;
+    top: 10rem;
+    font-size: 1.5rem;
+    width: 17rem;
+    background: #CAD3C8;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.qform {
+    position: absolute;
+    /* box-shadow: 0 0 black; */
+    top: 6rem;
+    left: 4rem
+}
+
+.randomiseselect form div input:not([type="number"]) {
+    cursor: pointer;
+    height: 25px;
+    width: 15px;
+    margin: 0
+}
+
+.randomiseselect form div {
+    background-color: #D6A2E8;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.randomiseselect form button {
+    position: absolute;
+    left: 3rem;
+    top: 6rem;
+}
+
+.block {
+    display: none;
+}
+
+.btn {
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: none;
+    background-color: aquamarine;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(59, 167, 131);
+}
+
+.secq {
+    display: none;
+}
+
+.stylewidth {
+    width: 9rem;
+}
+
+#btnanw2,
+#btnanw4 {
+    left: -4rem;
+    top: 10rem;
+    width: max-content;
+    background-color: #ff4b4b;
+}
+
+#btnanw2:hover,
+#btnanw4:hover {
+    background-color: rgb(167, 59, 59);
+}
+
+#btnanw1:hover {
+    background-color: rgb(59, 62, 167);
+}
+
+#btnanw3 {
+    left: 3rem;
+    top: 10rem;
+    width: max-content;
+}
+
+#btnanw1 {
+    left: 10rem;
+    top: 10rem;
+    width: max-content;
+    background-color: #5a79f2;
+}
+
+#continue_data .qform div {
+    position: absolute;
+    width: max-content;
+    left: -11rem;
+}
+
+#thirdq form {
+    left: 3rem;
+}
+
+#thirdq form button {
+    left: 4rem;
+}
+
+.subtract {
+    font-size: .75rem;
+}
+
+#qform12 {
+    left: 8rem;
+}
+
+#sixthq form {
+    top: 8rem;
+}
+
+.randomiseselect form label {
+    cursor: pointer;
+}
+
+#answerdiv {
+    position: absolute;
+    left: 20rem;
+    top: 10rem;
+    font-size: 1.5rem;
+    width: max-content;
+    background: #CAD3C8;
+    border-radius: 4px;
+    padding: 1rem;
+}

@@ -1,0 +1,216 @@
+.input_size_label {
+  font-family: "vazir";
+  font-size: 2rem;
+  position: relative;
+  justify-content: center;
+  color: azure;
+  background-image: linear-gradient(120deg, transparent 50%, white 50%);
+  background-size: 250%;
+  transition: all 0.4s;
+  border-radius: 2px;
+  margin-left: 12rem;
+  top: 14rem;
+}
+
+.form2:hover .input_size_label {
+  background-position: 100%;
+  color: royalblue;
+  transform: translateX(16px);
+}
+
+.input_size_label::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+  background: linear-gradient(120deg, transparent, red 50%);
+  transition: width .25s cubic-bezier(.51, 0.18, 0, .88) 0.1s;
+  border-radius: 2px;
+}
+
+.form2:hover .input_size_label::after {
+  width: 100%;
+}
+
+.form1:hover .input_label::after {
+  width: 100%;
+}
+
+#searchenginearraysize::before {
+  content: "0";
+  font-size: 2rem;
+  margin-right: .5rem
+}
+
+#searchenginearraysize::after {
+  content: "100";
+  font-size: 2rem;
+  margin-left: .5rem
+}
+
+#btn {
+  position: absolute;
+  top: 30rem;
+  left: 38rem;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: none;
+  background-color: aquamarine;
+  border: none;
+}
+
+#btn:hover {
+  background-color: rgb(59, 167, 131);
+}
+
+#btn2 {
+  position: relative;
+  top: 6rem;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: none;
+  background-color: aquamarine;
+  border: none;
+}
+
+#btn2:hover {
+  background-color: rgb(59, 167, 131);
+}
+
+#result_not_found {
+  color: #ffce00;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.result1 {
+  display: none;
+  color: #ffce00;
+  font-size: 2rem;
+  text-align: center;
+  width: max-content;
+  height: 12rem;
+  left: 30rem;
+  top: 16rem;
+  position: absolute;
+  background: rgb(0, 135, 165);
+  border-radius: 4px;
+}
+
+.result_time,
+.result_time2 {
+  margin: 1.1rem 0 0 0;
+}
+
+input[type=range] {
+  width: 25%;
+  height: 26px;
+  -webkit-appearance: none;
+  background-color: inherit;
+  position: relative;
+  top: 14rem;
+  margin-left: 1.5rem;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #50555C;
+  background: #50555C;
+  border-radius: 14px;
+  border: 0px solid #000000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 40px;
+  border-radius: 12px;
+  background: #529DE1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #50555C;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #50555C;
+  background: #50555C;
+  border-radius: 14px;
+  border: 0px solid #000000;
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 40px;
+  border-radius: 12px;
+  background: #529DE1;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #50555C;
+  border: 0px solid #000000;
+  border-radius: 28px;
+  box-shadow: 1px 1px 1px #50555C;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #50555C;
+  border: 0px solid #000000;
+  border-radius: 28px;
+  box-shadow: 1px 1px 1px #50555C;
+}
+
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 40px;
+  border-radius: 12px;
+  background: #529DE1;
+  cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #50555C;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #50555C;
+}
+
+.qform {
+  left: 4rem;
+}

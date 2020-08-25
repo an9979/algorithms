@@ -1,0 +1,41 @@
+.qform{
+    position: absolute;
+    top: 15rem;
+    left: 4rem;
+}
+.btn{
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: none;
+  background-color: aquamarine;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: rgb(59, 167, 131);
+}
+#btnanw2{
+left: -4rem;
+top: 10rem;
+width: max-content;
+background-color: #ff4b4b;
+
+}
+#btnanw2:hover{
+background-color:rgb(167, 59, 59);
+}
+#btnanw1:hover{
+background-color:rgb(59, 62, 167);  
+}
+#btnanw3{
+left: 3rem;
+top: 10rem;
+width: max-content;
+}
+#btnanw1{
+left: 10rem;
+top: 10rem;
+width: max-content;
+background-color: #5a79f2;
+
+}
